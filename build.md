@@ -62,4 +62,4 @@ VTK must be compiled with Qt support
 * Currently GPU Capability is set to 5.0. If incompatible with your GPU Capability (Can be seen on startup screen of Exposure Render):
 	* In CMakeLists.txt:
 	* Change 'SET(CUDA_NVCC_FLAGS "-arch=sm_50;${CUDA_NVCC_FLAGS}")', to 'SET(CUDA_NVCC_FLAGS "-arch=sm_XX;${CUDA_NVCC_FLAGS}")', where XX is your Capability.
-* Directory of Icons and Examples should be with exe
+* Directory of Icons and Examples should be with exe, and xmls in Presets should be copied to exe directory.

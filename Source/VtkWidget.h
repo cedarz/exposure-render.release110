@@ -14,7 +14,8 @@
 #pragma once
 
 //#include <QVTKWidget.h>
-#include <QVTKOpenGLWidget.h>
+//#include <QVTKOpenGLWidget.h>
+#include <QVTKOpenGLNativeWidget.h>
 
 // VTK
 #include <vtkSmartPointer.h>
@@ -52,7 +53,7 @@ class CVtkWidget : public QWidget
 public:
     CVtkWidget(QWidget* pParent = NULL);
 	
-	QVTKOpenGLWidget*		GetQtVtkWidget(void);
+	QVTKOpenGLNativeWidget*		GetQtVtkWidget(void);
 
 	QFrameBuffer	m_FrameBuffer;
 
@@ -65,7 +66,7 @@ private:
 	void SetupRenderView(void);
 	
 	QGridLayout									m_MainLayout;
-	QVTKOpenGLWidget							m_QtVtkWidget;
+	QVTKOpenGLNativeWidget						m_QtVtkWidget;
 	unsigned char*								m_pPixels;
 	QTimer										m_RenderLoopTimer;
 
