@@ -77,7 +77,7 @@ CVtkWidget::CVtkWidget(QWidget* pParent) :
 	SetupRenderView();
 }
 
-QVTKWidget* CVtkWidget::GetQtVtkWidget(void)
+QVTKOpenGLWidget* CVtkWidget::GetQtVtkWidget(void)
 {
 	return &m_QtVtkWidget;
 }

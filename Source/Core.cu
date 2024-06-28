@@ -12,6 +12,7 @@
 */
 
 #include "Core.cuh"
+#include <cuda_texture_types.h>
 
 texture<short, cudaTextureType3D, cudaReadModeNormalizedFloat>		gTexDensity;
 texture<short, cudaTextureType3D, cudaReadModeNormalizedFloat>		gTexGradientMagnitude;
